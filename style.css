@@ -1,0 +1,16 @@
+#logo {
+    text-align: center;
+}
+
+#logo img {
+    margin-top: 0px;
+    width: 200px;
+}
+
+#plattegrond img {
+    margin-top: 0px;
+    margin-left: -50%;
+    width: 200%;
+}
+
+

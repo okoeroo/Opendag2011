@@ -1,5 +1,5 @@
 body {
-    background: #000;
+    background: #ffffff;
     color: #ddd;
 }
 #jqt > * {
@@ -7,38 +7,39 @@ body {
 }
 #jqt h1, #jqt h2 {
     font: bold 18px "Helvetica Neue", Helvetica;
-    text-shadow: rgba(255,255,255,.2) 0 1px 1px;
+    text-shadow: rgba(128,128,128,.2) 0 1px 1px;
     color: #000;
-    margin: 10px 20px 5px;
+    /* margin: 50px 20px 5px; */
 }
 /* @group Toolbar */
 #jqt .toolbar {
     -webkit-box-sizing: border-box;
     border-bottom: 1px solid #000;
     padding: 10px;
-    height: 45px;
-    background: url(img/toolbar.png) #000000 repeat-x;
+    height: 140px;
+    /* background: url(img/toolbar.png) #000000 repeat-x; */
+    background: #ffffff repeat-x;
     position: relative;
 }
 #jqt .black-translucent .toolbar {
     margin-top: 20px;
 }
 #jqt .toolbar > h1 {
-    position: absolute;
+    /* position: absolute; */
     overflow: hidden;
-    left: 50%;
-    top: 10px;
+    /* left: 50%; */
+    top: 0px;
     line-height: 1em;
-    margin: 1px 0 0 -75px;
-    height: 40px;
-    font-size: 20px;
-    width: 150px;
+    /* margin: 1px 0 0 75px; */
+    /* height: 10px; */
+    font-size: 25px;
+    /* width: 300px; */
     font-weight: bold;
     text-shadow: rgba(0,0,0,1) 0 -1px 1px;
     text-align: center;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    color: #fff;
+    /* text-overflow: ellipsis; */
+    /* white-space: nowrap; */
+    color: #000;
 }
 #jqt.landscape .toolbar > h1 {
     margin-left: -125px;
@@ -411,7 +412,7 @@ body {
 /* @group Info */
 #jqt .info {
     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#aaa), color-stop(.6,#CCCCCC));
-    font-size: 12px;
+    font-size: 14px;
     line-height: 16px;
     text-align: center;
     text-shadow: rgba(255,255,255,.8) 0 1px 0;
