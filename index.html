@@ -6,7 +6,7 @@
         <script src="http://jsconsole.com/remote.js?"></script>
         <script src="http://192.168.1.2:8080/target/target-script-min.js"></script>
 -->
-        <title>Nikhef Opendag 2011</title>
+        <title>Opendag 2011</title>
         <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
@@ -241,30 +241,30 @@
 
                 <ul class="edgetoedge">
                     <li class="sep">13:00</li>
-                    <li><a href="#">
+                    <li class="arrow"><a href="#locatie_etage_3">
                             Paul Kooijman - KM3Net<br />
                             KM3Net: diepgaand onderzoek<br />
                             naar de cosmos
                         </a></li>
                     <li class="sep">14:00</li>
-                    <li><a href="#">
+                    <li class="arrow"><a href="#locatie_etage_3">
                             Willem van Leeuwen - Internet<br />
                             Hoe Nikhef werd gevangen in<br />
                             het World Wide Web
                         </a></li>
                     <li class="sep">15:00</li>
-                    <li><a href="#">
+                    <li class="arrow"><a href="#locatie_etage_3">
                             Stan Bentvelzen - ATLAS<br />
                             Higgs: Hebben we hem nou<br />
                             of niet?
                         </a></li>
                     <li class="sep">15:30</li>
-                    <li><a href="#">
+                    <li class="arrow"><a href="#locatie_etage_3">
                             Raimond Snellings - ALICE<br />
                             The little Big Bang
                         </a></li>
                     <li class="sep">16:00</li>
-                    <li><a href="#">
+                    <li class="arrow"><a href="#locatie_etage_3">
                             Chris van den Broeck - VIRGO<br />
                             Rimpelingen in de ruimtetijd:<br />
                             de zoektocht naar zwaarte-<br />
@@ -284,23 +284,32 @@
 
                 <ul class="edgetoedge">
                     <li class="sep">Begane grond, Centrale hal</li>
-                    <li><a href="#">Astrodeeltjes fysica</a></li>
-                    <li><a href="#">Nevel & Vonkenkamer maken<br />
-                                    kosmische straling zichtbaar</a></li>
+                    <li class="arrow"><a href="#locatie_bg">
+                                    Astrodeeltjes fysica
+                        </a></li>
+                    <li class="arrow"><a href="#locatie_bg">
+                                    Nevel & Vonkenkamer maken<br />
+                                    kosmische straling zichtbaar
+                        </a></li>
                     <li class="sep">Begane grond, Werkplaats</li>
-                    <li><a href="#">Alles over de experimenten bij<br />
-                                    de LHC-deeltjesversneller</a></li>
-                    <li><a href="#">Een kijkje achter de schermen<br />
+                    <li class="arrow"><a href="#locatie_bg">
+                                    Alles over de experimenten bij<br />
+                                    de LHC-deeltjesversneller
+                        </a></li>
+                    <li class="arrow"><a href="#locatie_bg">
+                                    Een kijkje achter de schermen<br />
                                     bij de elektronica- en<br />
                                     mechanische technologie<br />
                                     afdelingen
-                                    </a></li>
+                        </a></li>
                     <li class="sep">Begane grond, Spectrum</li>
-                    <li><a href="#">Korte films</a></li>
-                    <li><a href="#">Minilezingen:<br />
+                    <li class="arrow"><a href="#locatie_bg">Korte films</a></li>
+                    <li><a href="#">
+                                    Minilezingen:<br />
                                     Frank Linde / Jan van de Berg</a></li>
                     <li class="sep">2de verdieping, vide</li>
-                    <li><a href="#">Het Grid cluster:<br />
+                    <li class="arrow"><a href="#locatie_etage_2">
+                                    Het Grid cluster:<br />
                                     Bekijk de geavanceerde<br />
                                     computerruimte
                         </a></li>
@@ -320,25 +329,47 @@
 
                 <ul class="edgetoedge">
                     <li class="sep">Begane grond, Centrale hal</li>
-                    <li><a href="#locatieA">Helium balonnen</a></li>
-                    <li><a href="#locatieA">Speurtocht</a></li>
+                    <li class="arrow"><a href="#locatie_bg">Helium balonnen</a></li>
+                    <li class="arrow"><a href="#locatie_bg">Speurtocht</a></li>
                     <li class="sep">Begane grond, Werkplaats</li>
-                    <li><a href="#locatieA">Mechano pretlab</a></li>
+                    <li class="arrow"><a href="#locatie_bg">Mechano pretlab</a></li>
                     <li class="sep">Begane grond, Spectrum</li>
-                    <li><a href="#locatieA">Pretlab</a></li>
+                    <li class="arrow"><a href="#locatie_bg">Pretlab</a></li>
                     <br />
                 </ul>
             </div>
 
-            <!-- locatieA -->
-            <div id="locatieA">
+
+            <!-- Begane grond -->
+            <div id="locatie_bg">
                 <div class="toolbar">
                     <a class="back" href="#">Terug</a>
                     <p><div id="logo"><img src="img/nikhef_logo.png" /></div>
-                    <h1>Begane grond, Centrale hal</h1></p>
+                    <h1>Begane grond</h1></p>
                 </div>
 
-                <p><div id="plattegrond"><img src="img/nikhef_logo.png" /></div>
+                <p><div id="plattegrond"><img src="img/locatie_bg.png" /></div>
+            </div>
+
+            <!-- 2de_etage -->
+            <div id="locatie_etage_2">
+                <div class="toolbar">
+                    <a class="back" href="#">Terug</a>
+                    <p><div id="logo"><img src="img/nikhef_logo.png" /></div>
+                    <h1>2de etage</h1></p>
+                </div>
+
+                <p><div id="plattegrond"><img src="img/locatie_2de_etage.png" /></div>
+            </div>
+            <!-- 3de_etage -->
+            <div id="locatie_etage_3">
+                <div class="toolbar">
+                    <a class="back" href="#">Terug</a>
+                    <p><div id="logo"><img src="img/nikhef_logo.png" /></div>
+                    <h1>3de etage</h1></p>
+                </div>
+
+                <p><div id="plattegrond"><img src="img/locatie_3de_etage.png" /></div>
             </div>
 
             <!-- plattegrond_spa -->
