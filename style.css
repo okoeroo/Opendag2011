@@ -10,7 +10,9 @@
 #plattegrond img {
     margin-top: 0px;
     width: 100%;
-    overflow:scroll;
 }
 
-
+p.dowrap
+{
+    text-wrap:normal;
+}

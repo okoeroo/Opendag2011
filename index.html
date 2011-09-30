@@ -7,9 +7,13 @@
         <script src="http://192.168.1.2:8080/target/target-script-min.js"></script>
 -->
         <title>Opendag 2011</title>
-        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no", "width=device-width" />
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <script type="text/javascript" src="shiftzoom.js"></script>
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <!--
+        <script type="text/javascript" charset="utf-8" src="multitouch-fake.js"></script>
+        -->
         <script type="text/javascript">
             var nikheflocatie = new google.maps.LatLng(52.35700, 4.94899);
             var kmlUrl = './nikhef.kmz';
@@ -17,17 +21,18 @@
             var map = null;
 
             function initialize() {
-                var myOptions = {
-                        zoom: 17,
-                        center: nikheflocatie,
-                        mapTypeId: google.maps.MapTypeId.HYBRID
-                    };
-                map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+                    // Google Maps
+                    var myOptions = {
+                            zoom: 17,
+                            center: nikheflocatie,
+                            mapTypeId: google.maps.MapTypeId.HYBRID
+                        };
+                    map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
-                var kmlLayer = new google.maps.KmlLayer(kmlUrl, 
-                        {map:map,
-                            preserveViewport:true,
-                            suppressInfoWindows:false});
+                    var kmlLayer = new google.maps.KmlLayer(kmlUrl, 
+                            {map:map,
+                                preserveViewport:true,
+                                suppressInfoWindows:false});
                 }
         </script>
         <style type="text/css" media="screen">@import "./jqtouch/jqtouch.css";</style>
@@ -243,12 +248,12 @@
                     <li class="sep">13:00</li>
                     <li class="arrow"><a href="#locatie_etage_3">
                             Paul Kooijman - KM3Net<br />
-                            KM3Net: diepgaand onderzoek<br />
-                            naar de cosmos
+                            KM3Net: diepgaand onder-<br />
+                            zoek naar de cosmos
                         </a></li>
                     <li class="sep">14:00</li>
                     <li class="arrow"><a href="#locatie_etage_3">
-                            Willem van Leeuwen - Internet<br />
+                            Willem v. Leeuwen - Internet<br />
                             Hoe Nikhef werd gevangen in<br />
                             het World Wide Web
                         </a></li>
@@ -260,15 +265,14 @@
                         </a></li>
                     <li class="sep">15:30</li>
                     <li class="arrow"><a href="#locatie_etage_3">
-                            Raimond Snellings - ALICE<br />
-                            The little Big Bang
+                            Frank Linde - Directeur<br />
+                            Neutrino's: sneller dan het<br />
+                            licht
                         </a></li>
                     <li class="sep">16:00</li>
                     <li class="arrow"><a href="#locatie_etage_3">
-                            Chris van den Broeck - VIRGO<br />
-                            Rimpelingen in de ruimtetijd:<br />
-                            de zoektocht naar zwaarte-<br />
-                            krachtsgolven
+                            Jan van den Berg<br />
+                            Hoezo 'klein neutraaltje?
                         </a></li>
                     <br />
                 </ul>
@@ -380,7 +384,24 @@
                     <h1>Science Park</h1></p>
                 </div>
 
-                <p><div id="plattegrond"><img src="Plattegrond_spa.jpg" /></div>
+            <!--
+                <script>
+                var viewport = $("head meta[name=viewport]");
+                viewport.attr('content', 'width=320, initial-scale=1, maximum-scale=10.0, minimum-scale=1, user-scalable=1');
+                </script>
+            -->
+            <!--
+                <img src="img/nikhef_logo.png" /><br />
+                <div><img src="img/Plattegrond_spa.jpg" /></div>
+                <img onLoad="shiftzoom.add(this);" width="320" height="250" src="img/Plattegrond_spa.jpg" /><br />
+            -->
+                <ul class="edgetoedge">
+                    <li class="sep">Pinch/zoom op de kaart</li>
+                    <li>
+                        <img class="plattegrond" onLoad="shiftzoom.add(this);" width="320" height="250" src="img/Plattegrond_spa.jpg" />
+                    </li>
+                    <br />
+                </ul>
             </div>
         </div>
     </body>
