@@ -155,7 +155,7 @@
                 <ul class="rounded">
                     <li class="arrow"><a href="#locatie">Locatie informatie</a></li>
                     <li class="arrow"><a href="#minilezingen">Minilezingen</a> <small class="counter">5</small></li>
-                    <li class="arrow"><a href="#proefopstellingen">Proefopstellingen</a> <small class="counter">6</small></li>
+                    <li class="arrow"><a href="#proefopstellingen">Proefopstellingen</a> <small class="counter">8</small></li>
                     <li class="arrow"><a href="#voorkinderen">Special voor kinderen</a> <small class="counter">4</small></li>
                 </ul>
                 <!-- <h2>Websites / links</h2> -->
@@ -199,24 +199,27 @@
                 </div>
 
                 <ul class="edgetoedge">
-                    <li class="sep">Adres van Nikhef</li>
-                    <li class="arrow"><a href="#locatie_maps">
+                    <li class="sep">Ons adres</li>
+                    <li><a href="#">
                             Science Park 105<br />
                             1098 XG Amsterdam
+                        </a></li>
+                    <li class="arrow"><a href="#locatie_maps">
+                            Op de kaart
+                        </a></li>
+                    <li class="sep">Per trein</li>
+                    <li class="arrow"><a target="_blank" href="http://www.nikhef.nl/fileadmin/Doc/Docs%20&%20pdf/Communicatie/nsSciencePark.pdf">
+                            Station Science Park Amsterdam<br />
+                            Vertrekstaat
+                        </a></li>
+                    <li><a href="#">
+                            Station Amstelstation<br />
+                            via bus 40 of 240
                         </a></li>
                     <li class="sep">Plattegrond Science Park</li>
                     <li class="arrow"><a href="#plattegrond_spa">
                             Plattegrond<br />
                             Science Park Amsterdam
-                        </a></li>
-                    <li class="sep">Openbaar vervoer</li>
-                    <li class="arrow"><a target="_blank" href="http://www.nikhef.nl/fileadmin/Doc/Docs%20&%20pdf/Communicatie/nsSciencePark.pdf">
-                            Vertrekstaat Station<br />
-                            Science Park Amsterdam
-                        </a></li>
-                    <li><a href="#">
-                            Station Amstelstation<br />
-                            via bus 40 of 240
                         </a></li>
                 </ul>
                 <br />
@@ -294,15 +297,20 @@
                         </a></li>
                     <li class="sep">Begane grond, Werkplaats</li>
                     <li class="arrow"><a href="#locatie_bg">
-                                    Alles over de experimenten<br />
-                                    bij de LHC-deeltjesversneller
+                                    Alles over de experimenten bij<br />
+                                    de LHC-deeltjesversneller
                         </a></li>
                     <li class="arrow"><a href="#locatie_bg">
-                                    Een kijkje achter de<br />
-                                    schermen bij de elektronica-<br />
-                                    en mechanische technologie<br />
+                                    Een kijkje achter de schermen<br />
+                                    bij de elektronica- en<br />
+                                    mechanische technologie<br />
                                     afdelingen
                         </a></li>
+                    <li class="sep">Begane grond, Spectrum</li>
+                    <li class="arrow"><a href="#locatie_bg">Korte films</a></li>
+                    <li><a href="#">
+                                    Minilezingen:<br />
+                                    Frank Linde / Jan van de Berg</a></li>
                     <li class="sep">2de verdieping, vide</li>
                     <li class="arrow"><a href="#locatie_etage_2">
                                     Het Grid cluster:<br />
@@ -344,13 +352,7 @@
                     <h1>Begane grond</h1></p>
                 </div>
 
-                <ul class="edgetoedge">
-                    <li class="sep">Pinch/zoom op de kaart</li>
-                    <li>
-                        <img class="plattegrond" onLoad="shiftzoom.add(this);" width="320" height="250" src="img/locatie_bg.png" />
-                    </li>
-                    <br />
-                </ul>
+                <p><div id="plattegrond"><img src="img/locatie_bg.png" /></div>
             </div>
 
             <!-- 2de_etage -->
@@ -361,13 +363,7 @@
                     <h1>2de etage</h1></p>
                 </div>
 
-                <ul class="edgetoedge">
-                    <li class="sep">Pinch/zoom op de kaart</li>
-                    <li>
-                        <img class="plattegrond" onLoad="shiftzoom.add(this);" width="320" height="250" src="img/locatie_2de_etage.png" />
-                    </li>
-                    <br />
-                </ul>
+                <p><div id="plattegrond"><img src="img/locatie_2de_etage.png" /></div>
             </div>
             <!-- 3de_etage -->
             <div id="locatie_etage_3">
@@ -377,13 +373,7 @@
                     <h1>3de etage</h1></p>
                 </div>
 
-                <ul class="edgetoedge">
-                    <li class="sep">Pinch/zoom op de kaart</li>
-                    <li>
-                        <img class="plattegrond" onLoad="shiftzoom.add(this);" width="320" height="250" src="img/locatie_3de_etage.png" />
-                    </li>
-                    <br />
-                </ul>
+                <p><div id="plattegrond"><img src="img/locatie_3de_etage.png" /></div>
             </div>
 
             <!-- plattegrond_spa -->
@@ -394,15 +384,6 @@
                     <h1>Science Park</h1></p>
                 </div>
 
-                <ul class="edgetoedge">
-                    <li class="sep">Pinch/zoom op de kaart</li>
-                    <li>
-                        <img class="plattegrond" onLoad="shiftzoom.add(this);" width="320" height="250" src="img/Plattegrond_spa.jpg" />
-                    </li>
-                    <br />
-                </ul>
-            </div>
-        </div>
             <!--
                 <script>
                 var viewport = $("head meta[name=viewport]");
@@ -414,5 +395,14 @@
                 <div><img src="img/Plattegrond_spa.jpg" /></div>
                 <img onLoad="shiftzoom.add(this);" width="320" height="250" src="img/Plattegrond_spa.jpg" /><br />
             -->
+                <ul class="edgetoedge">
+                    <li class="sep">Pinch/zoom op de kaart</li>
+                    <li>
+                        <img class="plattegrond" onLoad="shiftzoom.add(this);" width="320" height="250" src="img/Plattegrond_spa.jpg" />
+                    </li>
+                    <br />
+                </ul>
+            </div>
+        </div>
     </body>
 </html>
