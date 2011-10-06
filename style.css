@@ -15,5 +15,6 @@
 
 p.dowrap
 {
-    text-wrap:normal;
+    word-wrap: break-word;
 }
+

@@ -260,8 +260,8 @@
                     <li class="sep">14:00</li>
                     <li class="arrow"><a href="#locatie_etage_3">
                             Willem v. Leeuwen - Internet<br />
-                            Hoe Nikhef werd gevangen in<br />
-                            het World Wide Web
+                            Hoe Nikhef werd gevangen<br />
+                            in het World Wide Web
                         </a></li>
                     <li class="sep">15:00</li>
                     <li class="arrow"><a href="#locatie_etage_3">
@@ -358,7 +358,13 @@
                     <h1>Begane grond</h1></p>
                 </div>
 
-                <p><div id="plattegrond"><img src="img/locatie_bg.png" /></div>
+                <ul class="edgetoedge">
+                    <li class="sep">Pinch/zoom op de kaart</li>
+                    <li>
+                        <img class="plattegrond" onLoad="shiftzoom.add(this);" width="320" height="250" src="img/locatie_bg.png" />
+                    </li>
+                    <br />
+                </ul>
             </div>
 
             <!-- 2de_etage -->
@@ -369,7 +375,13 @@
                     <h1>2de etage</h1></p>
                 </div>
 
-                <p><div id="plattegrond"><img src="img/locatie_2de_etage.png" /></div>
+                <ul class="edgetoedge">
+                    <li class="sep">Pinch/zoom op de kaart</li>
+                    <li>
+                        <img class="plattegrond" onLoad="shiftzoom.add(this);" width="320" height="250" src="img/locatie_2de_etage.png" />
+                    </li>
+                    <br />
+                </ul>
             </div>
             <!-- 3de_etage -->
             <div id="locatie_etage_3">
@@ -379,7 +391,13 @@
                     <h1>3de etage</h1></p>
                 </div>
 
-                <p><div id="plattegrond"><img src="img/locatie_3de_etage.png" /></div>
+                <ul class="edgetoedge">
+                    <li class="sep">Pinch/zoom op de kaart</li>
+                    <li>
+                        <img class="plattegrond" onLoad="shiftzoom.add(this);" width="320" height="250" src="img/locatie_3de_etage.png" />
+                    </li>
+                    <br />
+                </ul>
             </div>
 
             <!-- plattegrond_spa -->
@@ -390,17 +408,6 @@
                     <h1>Science Park</h1></p>
                 </div>
 
-            <!--
-                <script>
-                var viewport = $("head meta[name=viewport]");
-                viewport.attr('content', 'width=320, initial-scale=1, maximum-scale=10.0, minimum-scale=1, user-scalable=1');
-                </script>
-            -->
-            <!--
-                <img src="img/nikhef_logo.png" /><br />
-                <div><img src="img/Plattegrond_spa.jpg" /></div>
-                <img onLoad="shiftzoom.add(this);" width="320" height="250" src="img/Plattegrond_spa.jpg" /><br />
-            -->
                 <ul class="edgetoedge">
                     <li class="sep">Pinch/zoom op de kaart</li>
                     <li>
