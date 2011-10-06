@@ -42,8 +42,8 @@ body {
     color: #000;
 }
 #jqt.landscape .toolbar > h1 {
-    margin-left: -125px;
-    width: 250px;
+    /* margin-left: -125px; */
+    /* width: 250px; */
 }
 #jqt .button, #jqt .back, #jqt .cancel, #jqt .add {
     position: absolute;
