@@ -2,7 +2,10 @@ Author: Oscar Koeroo
         Nikhef / 2011
 
 This is an implementation around jQTouch and works excellently on iPhones/iPod
-Touches and Androids.
+Touches and Androids. All other HTML5 based (mobile and non-mobile) browsers
+will work perfectly too. Unfortunately I couldn't test on various Nokias and
+Blackberry's to observe how it works, but as most of them are using the WebKit
+rendering engine I'm quite confident to be a success there too.
 
 It was used as a WebApp for the Openday (Opendag) at Nikhef on October 8, 2011.
 
